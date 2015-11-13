@@ -1,29 +1,3 @@
-# Help on module groups:
-
-__NAME__
---------
-`groups - # -*- coding: utf-8 -*-`
-
-__FILE__
---------
-`/openfire-restapi/ofrestapi/groups.py`
-
-__CLASSES__
------------
-```python
-base.Base(__builtin__.object)
-    Groups
-```
-
-class Groups(base.Base)
------------------------
-    Method resolution order:
-```python
-Groups
-base.Base
-__builtin__.object
-```
-    
 Methods defined here:
 ---------------------
 
@@ -58,16 +32,3 @@ update_group(self, groupname, description)
     :param groupname: Name of the group
     :param description: Description of the group
 ```
-
-Data descriptors inherited from base.Base:
-------------------------------------------
-
-```python
-__dict__
-    dictionary for instance variables (if defined)
-
-__weakref__
-    list of weak references to the object (if defined)
-```
-
-
