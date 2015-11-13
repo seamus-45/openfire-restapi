@@ -9,40 +9,34 @@ base.Base(__builtin__.object)
 
 ### methods
 ****************************************
-#### def __add_group__((self, groupname, description), None, None, None):
+```
+#### __add_group__(self, groupname, description):
 
 Create a group
 
-```
 :param groupname: Name of the group
 :param description: Description of the group
-```
 
-#### def __delete_group__((self, groupname), None, None, None):
+#### __delete_group__(self, groupname):
 
 Delete a group
 
-```
 :param groupname: The exact group name for request
-```
 
-#### def __get_group__((self, groupname), None, None, None):
+#### __get_group__(self, groupname):
 
 Retrieve exact group info
 
-```
 :param groupname: The exact group name for request
-```
 
-#### def __get_groups__((self,), None, None, None):
+#### __get_groups__(self,):
 
 Retrieve all groups
 
-#### def __update_group__((self, groupname, description), None, None, None):
+#### __update_group__(self, groupname, description):
 
 Update a group
 
-```
 :param groupname: Name of the group
 :param description: Description of the group
 ```
