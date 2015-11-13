@@ -2,7 +2,8 @@
 from exception import (IllegalArgumentException, UserNotFoundException, UserAlreadyExistsException,
                        RequestNotAuthorisedException, UserServiceDisabledException,
                        SharedGroupException, InvalidResponseException, PropertyNotFoundException,
-                       GroupAlreadyExistsException)
+                       GroupAlreadyExistsException, GroupNotFoundException, RoomNotFoundException,
+                       NotAllowedException, AlreadyExistsException)
 
 
 EXCEPTIONS_MAP = {
@@ -14,6 +15,10 @@ EXCEPTIONS_MAP = {
     'SharedGroupException': SharedGroupException,
     'PropertyNotFoundException': PropertyNotFoundException,
     'GroupAlreadyExistsException': GroupAlreadyExistsException,
+    'GroupNotFoundException': GroupNotFoundException,
+    'RoomNotFoundException': RoomNotFoundException,
+    'NotAllowedException': NotAllowedException,
+    'AlreadyExistsException': AlreadyExistsException,
 }
 
 

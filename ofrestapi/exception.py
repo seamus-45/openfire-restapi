@@ -35,3 +35,19 @@ class PropertyNotFoundException(Exception):
 
 class GroupAlreadyExistsException(Exception):
     pass
+
+
+class GroupNotFoundException(Exception):
+    pass
+
+
+class RoomNotFoundException(Exception):
+    pass
+
+
+class NotAllowedException(Exception):
+    pass
+
+
+class AlreadyExistsException(Exception):
+    pass
