@@ -17,6 +17,7 @@ base.Base(__builtin__.object)
 
 Create a chat room
 
+```
 :param roomname: The name/id of the room. Can only contains lowercase and alphanumeric characters
 :param name: Also the name of the room, but can contains non alphanumeric characters
 :param description: Description text of the room
@@ -45,6 +46,7 @@ Create a chat room
 :type members: List of strings. E.g. ['member@localhost',]
 :param outcasts: (optional) A collection with the current list of outcast users. An outcast user is not allowed to join the room again
 :type outcasts: List of strings. E.g. ['outcast@localhost',]
+```
 
 #### def __delete_room__((self, roomname, servicename), None, None, (conference,)):
 
