@@ -7,10 +7,10 @@ Installation
 ----------------
 
 Install from source:
+
         $ git clone git://github.com/seamus-45/openfire-restapi.git
         $ cd openfire-restapi
         $ python setup.py install
-
 
 Documentation
 ----------------
