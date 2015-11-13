@@ -17,6 +17,6 @@ Documentation
 * [User related](docs/users.md)
 * [Groups related](docs/groups.md)
 * [Chat room related](docs/muc.md)
-* [Session related](docs/session.md)
+* [Session related](docs/sessions.md)
 * [Messages related](docs/messages.md)
 * [System related](docs/system.md)
