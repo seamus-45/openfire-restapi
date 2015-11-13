@@ -32,8 +32,8 @@ class System(Base):
         """
         Create or update a system property
 
-        :prop key: The name of system property
-        :prop value: The value of system property
+        :param key: The name of system property
+        :param value: The value of system property
         """
         payload = {
             '@key': key,
