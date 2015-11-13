@@ -1,13 +1,4 @@
 Python Library Documentation: module sessions
-
-# __NAME__
-
-sessions - # -*- coding: utf-8 -*-
-
-# __FILE__
-
-/home/fedotov_sv/python-openfire/openfire/sessions.py
-
 # __CLASSES__
 
 base.Base(__builtin__.object)

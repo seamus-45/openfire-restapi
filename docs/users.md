@@ -1,13 +1,4 @@
 Python Library Documentation: module users
-
-# __NAME__
-
-users - # -*- coding: utf-8 -*-
-
-# __FILE__
-
-/home/fedotov_sv/python-openfire/openfire/users.py
-
 # __CLASSES__
 
 base.Base(__builtin__.object)

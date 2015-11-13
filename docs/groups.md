@@ -1,13 +1,4 @@
 Python Library Documentation: module groups
-
-# __NAME__
-
-groups - # -*- coding: utf-8 -*-
-
-# __FILE__
-
-/home/fedotov_sv/python-openfire/openfire/groups.py
-
 # __CLASSES__
 
 base.Base(__builtin__.object)

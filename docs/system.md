@@ -1,13 +1,4 @@
 Python Library Documentation: module system
-
-# __NAME__
-
-system - # -*- coding: utf-8 -*-
-
-# __FILE__
-
-/home/fedotov_sv/python-openfire/openfire/system.py
-
 # __CLASSES__
 
 base.Base(__builtin__.object)

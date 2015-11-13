@@ -1,13 +1,4 @@
 Python Library Documentation: module muc
-
-# __NAME__
-
-muc - # -*- coding: utf-8 -*-
-
-# __FILE__
-
-/home/fedotov_sv/python-openfire/openfire/muc.py
-
 # __CLASSES__
 
 base.Base(__builtin__.object)
