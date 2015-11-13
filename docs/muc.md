@@ -7,10 +7,6 @@ base.Base(__builtin__.object)
 ## class __Muc__
 ****************************************
 
-### data
-****************************************
-### descriptors
-****************************************
 ### methods
 ****************************************
 #### def __add_room__((self, roomname, name, description, servicename, subject, password, maxusers, persistent, public, registration, visiblejids, changesubject, anycaninvite, changenickname, logenabled, registerednickname, membersonly, moderated, broadcastroles, owners, admins, members, outcasts), None, None, (conference, None, None, 0, True, True, True, True, False, False, True, True, False, False, False, None, None, None, None, None)):
@@ -52,53 +48,66 @@ Create a chat room
 
 Delete a chat room
 
+```
 :param roomname: Exact room name
 :param servicename: (optional) The name of the Group Chat Service. Default: `conference`
+```
 
 #### def __get_room__((self, roomname, servicename), None, None, (conference,)):
 
 Retrieve exact chat room info
 
+```
 :param roomname: The exact chat room name for request
 :param servicename: (optional) The name of the Group Chat Service. Default: `conference`
+```
 
 #### def __get_room_users__((self, roomname, servicename), None, None, (conference,)):
 
 Retrieve chat room participants
 
+```
 :param roomname: The exact chat room name for request
 :param servicename: (optional) The name of the Group Chat Service. Default: `conference`
+```
 
 #### def __get_rooms__((self, servicename, typeof, query), None, None, (conference, public, None)):
 
 Retrieve all chat rooms or filter by chat room name
 
+```
 :param servicename: (optional) The name of the Group Chat Service. Default: `conference`
 :param typeof: (optional) Only as List Room in Directory set rooms. Values: `all`, `public`. Default: `puclic`
 :param query: (optional) Search/Filter by room name. This act like the wildcard search %String%
+```
 
 #### def __grant_user_role__((self, roomname, username, role, servicename), None, None, (conference,)):
 
 Grant role to chat room user
 
+```
 :param roomname: The exact chat room name for request
 :param username: The local username or the user JID
 :param role: Any from `owners`,`admins`,`members`,`outcasts`
 :param servicename: (optional) The name of the Group Chat Service. Default: `conference`
+```
 
 #### def __revoke_user_role__((self, roomname, username, role, servicename), None, None, (conference,)):
 
 Revoke role from chat room user
 
+```
 :param roomname: The exact chat room name for request
 :param username: The local username or the user JID
 :param role: Any from `owners`,`admins`,`members`,`outcasts`
 :param servicename: (optional) The name of the Group Chat Service. Default: `conference`
+```
 
 #### def __update_room__((self, roomname, name, description, servicename, subject, password, maxusers, persistent, public, registration, visiblejids, changesubject, anycaninvite, changenickname, logenabled, registerednickname, membersonly, moderated, broadcastroles, owners, admins, members, outcasts), None, None, (conference, None, None, 0, True, True, True, True, False, False, True, True, False, False, False, None, None, None, None, None)):
 
 Update a chat room
 
+```
 :param roomname: The name/id of the room. Can only contains lowercase and alphanumeric characters
 :param name: Also the name of the room, but can contains non alphanumeric characters
 :param description: Description text of the room
@@ -127,4 +136,4 @@ Update a chat room
 :type members: List of strings. E.g. ['member@localhost',]
 :param outcasts: (optional) A collection with the current list of outcast users. An outcast user is not allowed to join the room again
 :type outcasts: List of strings. E.g. ['outcast@localhost',]
-
+```

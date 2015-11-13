@@ -7,17 +7,15 @@ base.Base(__builtin__.object)
 ## class __Sessions__
 ****************************************
 
-### data
-****************************************
-### descriptors
-****************************************
 ### methods
 ****************************************
 #### def __close_user_sessions__((self, username), None, None, None):
 
 Close sessions of exact user
 
+```
 :param username: The user name
+```
 
 #### def __get_sessions__((self,), None, None, None):
 
@@ -27,5 +25,6 @@ Retrieve sessions of all users
 
 Retrieve sessions of exact user
 
+```
 :param username: The user name
-
+```

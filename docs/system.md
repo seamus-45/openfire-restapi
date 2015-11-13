@@ -7,17 +7,15 @@ base.Base(__builtin__.object)
 ## class __System__
 ****************************************
 
-### data
-****************************************
-### descriptors
-****************************************
 ### methods
 ****************************************
 #### def __delete_prop__((self, key), None, None, None):
 
 Delete a system property
 
+```
 :param key: The name of system property
+```
 
 #### def __get_concurrent_sessions__((self,), None, None, None):
 
@@ -27,7 +25,9 @@ Retrieve concurrent sessions
 
 Retrieve system property
 
+```
 :param key: The name of system property
+```
 
 #### def __get_props__((self,), None, None, None):
 
@@ -37,6 +37,7 @@ Retrieve all system properties
 
 Create or update a system property
 
-:prop key: The name of system property
-:prop value: The value of system property
-
+```
+:param key: The name of system property
+:param value: The value of system property
+```

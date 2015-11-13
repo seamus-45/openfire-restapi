@@ -7,30 +7,32 @@ base.Base(__builtin__.object)
 ## class __Groups__
 ****************************************
 
-### data
-****************************************
-### descriptors
-****************************************
 ### methods
 ****************************************
 #### def __add_group__((self, groupname, description), None, None, None):
 
 Create a group
 
+```
 :param groupname: Name of the group
 :param description: Description of the group
+```
 
 #### def __delete_group__((self, groupname), None, None, None):
 
 Delete a group
 
+```
 :param groupname: The exact group name for request
+```
 
 #### def __get_group__((self, groupname), None, None, None):
 
 Retrieve exact group info
 
+```
 :param groupname: The exact group name for request
+```
 
 #### def __get_groups__((self,), None, None, None):
 
@@ -40,6 +42,7 @@ Retrieve all groups
 
 Update a group
 
+```
 :param groupname: Name of the group
 :param description: Description of the group
-
+```
