@@ -9,7 +9,7 @@ base.Base(__builtin__.object)
 
 ### methods
 ****************************************
-```
+```python
 #### __add_group__(self, groupname, description):
 
 Create a group
