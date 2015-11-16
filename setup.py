@@ -2,12 +2,12 @@
 
 from setuptools import setup
 
-from ofrestapi import get_version
+from ofrestapi import __version__
 
 
 setup(
     name='openfire-restapi',
-    version=get_version(),
+    version=__version__,
     description=u'A python client for Openfire’s REST API Plugin',
     license="GPL-3",
     author='Sergey Fedotov (seamus-45)',
