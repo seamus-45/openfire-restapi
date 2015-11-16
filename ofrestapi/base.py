@@ -27,8 +27,8 @@ class Base(object):
     def __init__(self, host, secret, endpoint):
         """
         :param host: Scheme://Host/ for API requests
-        :param secret: Shared secret key for API request
-        :param endpoint: Endpoint for API request
+        :param secret: Shared secret key for API requests
+        :param endpoint: Endpoint for API requests
         """
         self.headers = {}
         self.headers['Authorization'] = secret

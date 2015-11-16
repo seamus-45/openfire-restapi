@@ -4,8 +4,8 @@ Methods defined here:
 ```python
 __init__(self, host, secret, endpoint='/plugins/restapi/v1/users')
     :param host: Scheme://Host/ for API requests
-    :param secret: Shared secret key for API request
-    :param endpoint: Endpoint for API request
+    :param secret: Shared secret key for API requests
+    :param endpoint: Endpoint for API requests
 
 add_user(self, username, password, name=None, email=None)
     Add user

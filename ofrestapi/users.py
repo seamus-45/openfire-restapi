@@ -13,8 +13,8 @@ class Users(Base):
     def __init__(self, host, secret, endpoint='/plugins/restapi/v1/users'):
         """
         :param host: Scheme://Host/ for API requests
-        :param secret: Shared secret key for API request
-        :param endpoint: Endpoint for API request
+        :param secret: Shared secret key for API requests
+        :param endpoint: Endpoint for API requests
         """
         super(Users, self).__init__(host, secret, endpoint)
 

@@ -4,8 +4,8 @@ Methods defined here:
 ```python
 __init__(self, host, secret, endpoint='/plugins/restapi/v1/chatrooms')
     :param host: Scheme://Host/ for API requests
-    :param secret: Shared secret key for API request
-    :param endpoint: Endpoint for API request
+    :param secret: Shared secret key for API requests
+    :param endpoint: Endpoint for API requests
 
 add_room(self, roomname, name, description, servicename='conference', subject=None, password=None, maxusers=0, persistent=True, public=True, registration=True, visiblejids=True, changesubject=False, anycaninvite=False, changenickname=True, logenabled=True, registerednickname=False, membersonly=False, moderated=False, broadcastroles=None, owners=None, admins=None, members=None, outcasts=None)
     Create a chat room
