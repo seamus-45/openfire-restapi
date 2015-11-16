@@ -36,7 +36,7 @@ class Users(Base):
         params = {'search': query} if query else None
         return self._submit_request(get, self.endpoint, params=params)
 
-    def add_user(self, username, password, name=None, email=None):
+    def add_user(self, username, password, name=None, email=None, props=None):
         """
         Add user
 
@@ -44,6 +44,7 @@ class Users(Base):
         :param password: The password of the user
         :param name: (optional) The display name of the user
         :param email: (optional) The email address of the user
+        :param props: (optional) Dictionary with additional user properties
         """
         payload = {
             'username': username,
@@ -51,6 +52,11 @@ class Users(Base):
             'name': name,
             'email': email,
         }
+        if props:
+            payload['properties'] = {}
+            payload['properties']['property'] = []
+            for key, value in props.iteritems():
+                payload['properties']['property'].append({'@key': key, '@value': value})
         return self._submit_request(post, self.endpoint, json=payload)
 
     def delete_user(self, username):
@@ -62,7 +68,7 @@ class Users(Base):
         endpoint = '/'.join([self.endpoint, username])
         return self._submit_request(delete, endpoint)
 
-    def update_user(self, username, newusername=None, password=None, name=None, email=None):
+    def update_user(self, username, newusername=None, password=None, name=None, email=None, props=None):
         """
         Update user.
 
@@ -71,6 +77,7 @@ class Users(Base):
         :param password: (optional) The new password of the user
         :param name: (optional) The new display name of the user
         :param email: (optional) The new email address of the user
+        :param props: (optional) Dictionary with additional user properties
         """
         endpoint = '/'.join([self.endpoint, username])
         payload = {
@@ -79,6 +86,11 @@ class Users(Base):
             'name': name,
             'email': email,
         }
+        if props:
+            payload['properties'] = {}
+            payload['properties']['property'] = []
+            for key, value in props.iteritems():
+                payload['properties']['property'].append({'@key': key, '@value': value})
         return self._submit_request(put, endpoint, json=payload)
 
     def get_user_groups(self, username):
