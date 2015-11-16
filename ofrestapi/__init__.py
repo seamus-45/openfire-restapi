@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-VERSION = (0, 1)
+VERSION = (0, 1, 1)
 
 from users import Users
 from muc import Muc
@@ -11,5 +11,5 @@ from messages import Messages
 
 
 def get_version():
-    version = '{0}.{1}'.format(VERSION[0], VERSION[1])
+    version = '{0}.{1}.{2}'.format(VERSION[0], VERSION[1], VERSION[2])
     return version

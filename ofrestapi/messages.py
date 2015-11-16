@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from requests import post
+from requests import (get, post)
 from base import Base
 
 
@@ -23,3 +23,12 @@ class Messages(Base):
             'body': message,
         }
         return self._submit_request(post, self.endpoint, json=payload)
+
+    def get_unread_messages(self, jid):
+        """
+        Retrieve unread messages count
+
+        :param jid: The JID for get messages count from
+        """
+        endpoint = '/plugins/restapi/v1/archive/messages/unread/' + jid
+        return self._submit_request(get, endpoint)
