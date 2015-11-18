@@ -164,7 +164,7 @@ class Users(Base):
         :param username: The user name
         :param jid: The JID of the roster item to be added. E.g. foo@example.org
         :param name: (optional) The nickname for the user when used in this roster
-        :param subscription: (optional) The subscription type. One of SUBSCRIPTION_REMOVE, SUBSCRIPTION_NONE,SUBSCRIPTION_TO,SUBSCRIPTION_FROM,SUBSCRIPTION_BOTH
+        :param subscription: (optional) The subscription type. One of SUBSCRIPTION_REMOVE,SUBSCRIPTION_NONE,SUBSCRIPTION_TO,SUBSCRIPTION_FROM,SUBSCRIPTION_BOTH
         :param groups: (optional) A list of groups to organize roster entries under
         :type groups: List of strings. E.g. ['Admins','Friends']
         """
@@ -194,7 +194,7 @@ class Users(Base):
         :param username: The user name
         :param jid: The JID of the roster item to be updated. E.g. foo@example.org
         :param name: (optional) The nickname for the user when used in this roster
-        :param subscription: (optional) The subscription type. One of SUBSCRIPTION_REMOVE, SUBSCRIPTION_NONE,SUBSCRIPTION_TO,SUBSCRIPTION_FROM,SUBSCRIPTION_BOTH
+        :param subscription: (optional) The subscription type. One of SUBSCRIPTION_REMOVE,SUBSCRIPTION_NONE,SUBSCRIPTION_TO,SUBSCRIPTION_FROM,SUBSCRIPTION_BOTH
         :param groups: (optional) A list of groups to organize roster entries under
         :type groups: List of strings. E.g. ['Admins','Friends']
         """
