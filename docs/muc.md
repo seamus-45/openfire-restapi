@@ -61,7 +61,7 @@ get_rooms(self, servicename='conference', typeof='public', query=None)
     Retrieve all chat rooms or filter by chat room name
     
     :param servicename: (optional) The name of the Group Chat Service. Default: `conference`
-    :param typeof: (optional) Only as List Room in Directory set rooms. Values: `all`, `public`. Default: `puclic`
+    :param typeof: (optional) Search only specified type of the rooms. Values: `all`, `public`. Default: `puclic`
     :param query: (optional) Search/Filter by room name. This act like the wildcard search %String%
 
 grant_user_role(self, roomname, username, role, servicename='conference')
