@@ -80,12 +80,12 @@ revoke_user_role(self, roomname, username, role, servicename='conference')
     :param role: Any from `owners`,`admins`,`members`,`outcasts`
     :param servicename: (optional) The name of the Group Chat Service. Default: `conference`
 
-update_room(self, roomname, name, description, servicename='conference', subject=None, password=None, maxusers=0, persistent=True, public=True, registration=True, visiblejids=True, changesubject=False, anycaninvite=False, changenickname=True, logenabled=True, registerednickname=False, membersonly=False, moderated=False, broadcastroles=None, owners=None, admins=None, members=None, outcasts=None)
+update_room(self, roomname, name=None, description=None, servicename='conference', subject=None, password=None, maxusers=0, persistent=True, public=True, registration=True, visiblejids=True, changesubject=False, anycaninvite=False, changenickname=True, logenabled=True, registerednickname=False, membersonly=False, moderated=False, broadcastroles=None, owners=None, admins=None, members=None, outcasts=None)
     Update a chat room
     
     :param roomname: The name/id of the room. Can only contains lowercase and alphanumeric characters
-    :param name: Also the name of the room, but can contains non alphanumeric characters
-    :param description: Description text of the room
+    :param name: (optional) Also the name of the room, but can contains non alphanumeric characters
+    :param description: (optional) Description text of the room
     :param servicename: (optional) The name of the Group Chat Service. Default: `conference`
     :param subject: (optional) Subject of the room
     :param password: (optional) The password that the user must provide to enter the room

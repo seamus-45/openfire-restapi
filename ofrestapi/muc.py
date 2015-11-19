@@ -126,7 +126,7 @@ class Muc(Base):
         params = {'servicename': servicename}
         return self._submit_request(delete, endpoint, params=params)
 
-    def update_room(self, roomname, name, description, servicename='conference',
+    def update_room(self, roomname, name=None, description=None, servicename='conference',
                     subject=None, password=None, maxusers=0, persistent=True,
                     public=True, registration=True, visiblejids=True, changesubject=False,
                     anycaninvite=False, changenickname=True, logenabled=True,
@@ -136,8 +136,8 @@ class Muc(Base):
         Update a chat room
 
         :param roomname: The name/id of the room. Can only contains lowercase and alphanumeric characters
-        :param name: Also the name of the room, but can contains non alphanumeric characters
-        :param description: Description text of the room
+        :param name: (optional) Also the name of the room, but can contains non alphanumeric characters
+        :param description: (optional) Description text of the room
         :param servicename: (optional) The name of the Group Chat Service. Default: `conference`
         :param subject: (optional) Subject of the room
         :param password: (optional) The password that the user must provide to enter the room
